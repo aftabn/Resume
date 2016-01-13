@@ -50,7 +50,7 @@
 \textbullet{} Cumulative GPA: 86.2\%
 \vspace{0.075cm}
 
-\vspace{0.75cm}
+\vspace{0.825cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -105,13 +105,13 @@
 \vspace{0.075cm}
 
 \location{Graphic / Web Design:}
-\it{\textbullet{} Photoshop \textbullet{} Illustrator \textbullet{} Brackets \\}
+\it{\textbullet{} Photoshop \textbullet{} Illustrator \textbullet{} WebStorm \\}
 \vspace{0.075cm}
 
 \location{Other:}
-\it{\textbullet{} Git \textbullet{} Perforce \textbullet{} Linux \textbullet{} ROS \\}
+\it{\textbullet{} Git \textbullet{} Perforce \textbullet{} Linux \\}
 
-\vspace{0.75cm}
+\vspace{0.9cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     CLUBS AND SOCIETIES
@@ -155,21 +155,11 @@
 \item Wrote the drivers for the board using Atmel or Arduino microcontrollers in C
 \item Created GUI applications that interfaced with the device and many APIs or supporting libraries using C\#
 \item Implemented databases using Microsoft SQL Management Studio and Entity Framework with C\# to log data and keep track of calibrations/settings between multiple devices
+\item Developed several solutions using PID controllers, threading, timers / interrupts, SPI, thermocouples, watchdogs,
+filters, ADCs, USART communication
 \end{tightemize}
 
-\sectionsep
-%------------------------------------------------
-
-\runsubsection{Toronto General Hospital}
-\descript{| Volunteer Engineering Consultant}
-
-\location{July, 2013 – Aug, 2013 | Toronto, ON}
-\begin{tightemize}
-\item Analyzed the Normothermic Ex Vivo Liver Perfusion device being developed in order to simplify its components
-\item Produced the outline of a new prototype with modifications that would make the device more portable
-\end{tightemize}
-
-\vspace{0.9cm}
+\vspace{0.7cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TECHNICAL PROJECTS
@@ -177,13 +167,29 @@
 \section{Technical Projects}
 \vspace{0.15cm}
 
+\runsubsection{EC Turbo-Fan Helicopter}
+\descript{| Team Lead, Control System Lead}
+
+\location{January, 2016 - Present}
+\begin{tightemize}
+\item Designing a 2-Degree-of-Freedom (DoF) helicopter with all but the lift and yaw DoF mechanically constrained
+\item Developing a closed loop feedback system by implementing a PID controller within a microcontroller that interfaces with sensors to accurately control the position of the helicopter
+\item Writing the firmware for the microcontroller in C++ and creating a GUI test interface in C\# to allow for quicker and more efficient calibration, PID tuning and debugging
+\item Adding Bluetooth capabilities to the device to allow for wireless PID tuning and flashing of new firmware
+\item Creating an android app with a simulated joystick to allow for easy, wireless control of the helicopter 
+\end{tightemize}
+
+\sectionsep
+
+%------------------------------------------------
 
 \runsubsection{Patient Data Android App}
 \descript{| Vancouver General Hospital}
 
 \location{January, 2016 - Present}
 \begin{tightemize}
-\item Developing an android app for securely transferring data from a doctor to a patient using an encrypted QR barcode
+\item Prototyping a way to modernize a paper-based data transfer process between doctor and patient after intubation
+procedures, through the use of QR codes, a patient Android app, and a web portal
 \end{tightemize}
 
 \sectionsep
@@ -195,22 +201,7 @@
 
 \location{March, 2015}
 \begin{tightemize}
-\item Prototyped a smart fall detector for safety of elderly patients in a care-home 
-\item Developed an Android app which relays alerts sent from the fall detector (i.e. Myo armband) by Bluetooth
-\item Implemented an online database which updates a central web portal in real-time based on data received by the Android app
-\end{tightemize}
-
-\sectionsep
-
-%------------------------------------------------
-
-\runsubsection{Electromagnetic Tether Robots}
-\descript{| Software Lead}
-
-\location{March, 2014 – April, 2014}
-\begin{tightemize}
-\item Worked with a group of 6 peers to design, build, program and test an autonomous robot (receiver) that follows another keypad controlled robot (electromagnetic beacon) 
-\item Designed a state machine for the robots and implemented several commands such as parallel park with SPI using Assembly and C 
+\item Prototyped a smart fall detection system to alert hospital personnel in the event of a patient falling through the use of an Android app, a Myo armband, an online database (Firebase) and a central web portal
 \end{tightemize}
 
 \sectionsep
