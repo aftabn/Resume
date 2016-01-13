@@ -139,21 +139,23 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \color{white}%
 }
 
-\newcommand{\header}[6]{%
+\newcommand{\header}[7]{%
   \begin{tikzpicture}[remember picture, overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=5.85cm] (box) at (9.55, 1.7){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{64pt}\color{header}%
       {\thinfont #1 }{\bodyfont #2}
     };
-    \node [anchor=north] (website) at (9.55, -2.15) {%
+    \node [anchor=north] (personal) at (9.55, -2.15) {%
       \fontsize{16pt}{24pt}\color{header}%
-      \thinfont #3%
+      {\thinfont #3}{\bodyfont \enspace | }{\thinfont #4}{\bodyfont \enspace | }{\thinfont #5}
     };
-    \node [anchor=north] at (website.south) {%
+    \node [anchor=north] at (personal.south) {%
       \fontsize{16pt}{24pt}\color{header}%
-      {\thinfont #4}{\bodyfont \enspace | }{\thinfont #5}{\bodyfont \enspace | }{\thinfont #6}
+      {\thinfont #6}{\bodyfont \enspace | }{\thinfont #7}
     };
+    
+   
 
   \end{tikzpicture}
   \vspace{4.4cm} % This controls space after box
